@@ -11,6 +11,7 @@ i made this not just for highway but because i will get alot of use out of it
 | 1 | PCB |
 | 1 | Soldering Iron |
 | 1 | Spool of Solder |
+| 1 | Rotary Encoder|
 
 ![image](https://github.com/user-attachments/assets/660fec8c-0481-41bd-bf15-6e67eeaffb14)
 
