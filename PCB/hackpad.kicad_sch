@@ -1265,6 +1265,12 @@
 		(uuid "8e249fcc-4f11-43b5-b5ce-61d710d7ffed")
 	)
 	(junction
+		(at 54.61 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db30615e-328e-4c69-9b57-5e8ff178d669")
+	)
+	(junction
 		(at 54.61 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1372,6 +1378,26 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 62.23) (xy 87.63 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a3586a-20cd-4ac6-b044-8d30dd3d4bd5")
+	)
+	(wire
+		(pts
+			(xy 135.89 110.49) (xy 135.89 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72958b26-42ba-4014-97ab-3291949e4eb0")
+	)
+	(wire
+		(pts
 			(xy 54.61 54.61) (xy 54.61 69.85)
 		)
 		(stroke
@@ -1379,6 +1405,16 @@
 			(type default)
 		)
 		(uuid "8769d447-fa79-4b68-914f-0afceb56e5b2")
+	)
+	(wire
+		(pts
+			(xy 87.63 62.23) (xy 87.63 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c977bed-9228-48e7-b0b4-a27de6f4cdbd")
 	)
 	(wire
 		(pts
@@ -1392,6 +1428,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 78.74) (xy 88.9 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "94ed716c-0c81-4bf4-94a3-72a468effb90")
+	)
+	(wire
+		(pts
 			(xy 90.17 55.88) (xy 116.84 55.88)
 		)
 		(stroke
@@ -1402,7 +1448,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 100.33) (xy 54.61 111.76)
+			(xy 54.61 100.33) (xy 54.61 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1492,6 +1538,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 110.49) (xy 135.89 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9f9dff6-fce1-42b9-823e-afd02de571bd")
+	)
+	(wire
+		(pts
 			(xy 81.28 54.61) (xy 81.28 97.79)
 		)
 		(stroke
@@ -1499,6 +1555,16 @@
 			(type default)
 		)
 		(uuid "dc3ee712-df08-4c44-8bf3-f8505eb05b68")
+	)
+	(wire
+		(pts
+			(xy 54.61 110.49) (xy 54.61 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5323bce-3456-4cbe-b56d-0c0b413d2b9e")
 	)
 	(wire
 		(pts
@@ -1706,7 +1772,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 111.76 0)
+		(at 54.61 127 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1715,7 +1781,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d319910-a074-44de-ba7e-a0e207191f06")
 		(property "Reference" "#PWR01"
-			(at 54.61 118.11 0)
+			(at 54.61 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1724,7 +1790,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 116.84 0)
+			(at 54.61 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1732,7 +1798,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 111.76 0)
+			(at 54.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1741,7 +1807,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 111.76 0)
+			(at 54.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1750,7 +1816,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 111.76 0)
+			(at 54.61 127 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1833,6 +1899,74 @@
 			(project ""
 				(path "/a86692fa-4d6e-4315-9256-8fbb70ace088"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 59.69 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "41745cc1-cb07-4eda-a4e9-dd62cb2ce0c5")
+		(property "Reference" "SW5"
+			(at 59.69 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_Push"
+			(at 59.69 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_PCB"
+			(at 59.69 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 59.69 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 59.69 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "269e5ed1-2d5d-4dc7-b9f2-7e0f7b2610fd")
+		)
+		(pin "2"
+			(uuid "ea8aeb48-ed22-44ed-aba0-110f485f7355")
+		)
+		(instances
+			(project "hackpad"
+				(path "/a86692fa-4d6e-4315-9256-8fbb70ace088"
+					(reference "SW5")
 					(unit 1)
 				)
 			)

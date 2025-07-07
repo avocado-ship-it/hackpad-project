@@ -6,6 +6,8 @@ from kmk.kmk_keyboard import KMKKeyboard
 from kmk.scanners.keypad import KeysScanner
 from kmk.keys import KC
 from kmk.modules.macros import Press, Release, Tap, Macros
+from kmk.extensions.media_keys import MediaKeys
+keyboard.extensions.append(MediaKeys())
 
 # This is the main instance of your keyboard
 keyboard = KMKKeyboard()
@@ -27,7 +29,7 @@ keyboard.matrix = KeysScanner(
 # Look here for keycodes: https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/keycodes.md
 # And here for macros: https://github.com/KMKfw/kmk_firmware/blob/main/docs/en/macros.md
 keyboard.keymap = [
-    [KC.A, KC.DELETE, KC.MACRO("Hello world!"), KC.Macro(Press(KC.LCMD), Tap(KC.S), Release(KC.LCMD)),]
+    [KC.MEDIA_PLAY_PAUSE, KC.AUDIO_VOL_UP, KC.AUDIO_VOL_DOWN, ]
 ]
 
 # Start kmk!
